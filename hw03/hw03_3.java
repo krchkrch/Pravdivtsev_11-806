@@ -4,10 +4,8 @@ import java.util.Scanner;
 public class hw03_3 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Введите кол-во элементов массива: ");
         int n = sc.nextInt();
         int arr[] = new int[n];
-        System.out.println("Введите элементы массива:");
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
         }
@@ -23,7 +21,7 @@ public class hw03_3 {
         if (arr[n - 1] > arr[n - 2]) {
             count += 1;
         }
-        System.out.println("Кол-во локальных максимумов: " + count);
+        System.out.println(count);
     }
 }
 
