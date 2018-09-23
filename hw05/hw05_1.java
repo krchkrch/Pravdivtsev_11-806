@@ -1,4 +1,4 @@
-import java.util.Scanner;
+п»їimport java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -8,19 +8,19 @@ public class Main {
         int r = 1;
         while (true) {
             int n = 0;
-            System.out.println("Если вы хотите продолжить введите число не равное 0 (0 - выход)");
+            System.out.println("Р•СЃР»Рё РІС‹ С…РѕС‚РёС‚Рµ РїСЂРѕРґРѕР»Р¶РёС‚СЊ РІРІРµРґРёС‚Рµ С‡РёСЃР»Рѕ РЅРµ СЂР°РІРЅРѕРµ 0 (0 - РІС‹С…РѕРґ)");
             n = sc.nextInt();
             if (n == 0) break;
             if (r == 1) {
                 result = 0;
-                System.out.println("Введите первое число:");
+                System.out.println("Р’РІРµРґРёС‚Рµ РїРµСЂРІРѕРµ С‡РёСЃР»Рѕ:");
                 a = sc.nextDouble();
             } else {
                 a = result;
             }
-            System.out.println("Введите оператор:");
+            System.out.println("Р’РІРµРґРёС‚Рµ РѕРїРµСЂР°С‚РѕСЂ:");
             String op = sc.next();
-            System.out.println("Введите второе число:");
+            System.out.println("Р’РІРµРґРёС‚Рµ РІС‚РѕСЂРѕРµ С‡РёСЃР»Рѕ:");
             double b = sc.nextDouble();
             if (op.equals("+")) {
                 result = a + b;
@@ -34,7 +34,7 @@ public class Main {
 
 
             System.out.println(result);
-            System.out.println("Сбросить результат? 1 - да | 0 - нет");
+            System.out.println("РЎР±СЂРѕСЃРёС‚СЊ СЂРµР·СѓР»СЊС‚Р°С‚? 1 - РґР° | 0 - РЅРµС‚");
             r = sc.nextInt();
         }
 
