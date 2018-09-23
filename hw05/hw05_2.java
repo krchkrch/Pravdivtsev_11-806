@@ -12,7 +12,7 @@ public class hw05_2 {
             if (simvol == '1' || simvol == '2' || simvol == '3' || simvol == '4' || simvol == '5'
                     || simvol == '6' || simvol == '7' || simvol == '8' || simvol == '9' || simvol == '0') {
                 simvol = '*';
-            }else if (simvol == ' '){
+            } else if (simvol == ' ') {
                 simvol = ' ';
             }
             newStr += simvol;
