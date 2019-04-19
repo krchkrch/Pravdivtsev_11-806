@@ -16,10 +16,10 @@ public class Stack {
     }
 
     public void printStack(){
-        Node wew = tail;
-        while(wew != null){
-            System.out.println(wew.getValue());
-            wew = wew.getTail();
+        Node qwert = tail;
+        while(qwert != null){
+            System.out.println(qwert.getValue());
+            qwert = qwert.getTail();
         }
     }
 }
