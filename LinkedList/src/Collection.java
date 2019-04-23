@@ -1,6 +1,6 @@
 import java.util.Iterator;
 
-public interface ILinkedList<T>{
+public interface Collection<T>{
     void add(T element);
 
     void add(T element, int position);
@@ -15,9 +15,9 @@ public interface ILinkedList<T>{
 
     void remove(int position);
 
-    void addAll(ILinkedList<T> elements);
+    void addAll(Collection<T> elements);
 
-    void addAll(ILinkedList<T> elements, int position);
+    void addAll(Collection<T> elements, int position);
 
     Iterator<Node<T>> getIterator();
 }

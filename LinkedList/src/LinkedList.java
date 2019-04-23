@@ -1,6 +1,6 @@
 import java.util.Iterator;
 
-public class LinkedList<T> implements ILinkedList {
+public class LinkedList<T> implements Collection {
     private Node<T> header;
     private Node<T> last;
     private int size = 0;
@@ -85,7 +85,7 @@ public class LinkedList<T> implements ILinkedList {
     }
 
     @Override
-    public void addAll(ILinkedList elements) {
+    public void addAll(Collection elements) {
         Node node = get(size() - 1);
         node.setNext(elements.get(0));
 
@@ -93,7 +93,7 @@ public class LinkedList<T> implements ILinkedList {
     }
 
     @Override
-    public void addAll(ILinkedList elements, int position) {
+    public void addAll(Collection elements, int position) {
         elements.get(elements.size()-1).setNext(get(position));
         if (position != 0) {
             get(position - 1).setNext(elements.get(0));
