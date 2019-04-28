@@ -22,18 +22,6 @@ public class Main {
         return sum(t, b) - sum(t, a - 1);
     }
 
-    public static void set(int[] t, int i, int value) {
-        for (; i < t.length; i |= i + 1)
-            t[i] = Math.max(t[i], value);
-    }
-
-    public static int max(int[] t, int i) {
-        int res = Integer.MIN_VALUE;
-        for (; i >= 0; i = (i & (i + 1)) - 1)
-            res = Math.max(res, t[i]);
-        return res;
-    }
-
 
     public static void main(String[] args) throws IOException {
 
@@ -50,9 +38,16 @@ public class Main {
                 add(t, i, sc.nextInt());
 
         }
-//summa s 1 po 3 index elementov
-       int a = sum(t,1,3);
+        //summa s 1 po 3 index elementov
+        int a = sum(t,1,3);
+        //dobavlenie chisla 3 k elementu s indexom 1
+        add(t,1,3);
         System.out.println(a);
+
+        for (int z = 0; z < t.length; z++) {
+            System.out.print(t[z]+" ");
+
+        }
     }
 }
 

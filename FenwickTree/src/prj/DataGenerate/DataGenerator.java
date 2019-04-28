@@ -10,7 +10,7 @@ public class DataGenerator {
         FileWriter fr = new FileWriter(data);
         BufferedWriter bw = new BufferedWriter(fr);
         for (int i = 0; i < n; i++) {
-            bw.write(((int) Math.round(Math.random() * 100)) +"\n");
+            bw.write(((int) Math.round(Math.random() * 5)) +"\n");
         }
         bw.close();
         fr.close();
